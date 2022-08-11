@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Allura&display=swap");
 * {
   scroll-behavior: smooth;
   margin: 0;
@@ -7,13 +8,21 @@
 body {
   background-color: #201d1f;
   color: #ffffff;
+  font-family: sans-serif;
 }
 
 header {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   height: 200px;
+  position: absolute;
+  width: 100%;
+}
+header a {
+  text-decoration: none;
+  color: #ffffff;
+  font-family: "Times New Roman", Times, serif;
 }
 header .logo {
   position: absolute;
@@ -31,10 +40,38 @@ header .navbar {
 
 .nav-list {
   display: inline-flex;
-  gap: 3rem;
+  gap: 5vw;
 }
 
 .nav-items {
   text-decoration: none;
   list-style-type: none;
+}
+
+.main-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  align-items: center;
+  gap: 2rem;
+  background-image: url("../images/waffle-dark.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main-section .main-title {
+  font-family: "Allura", cursive;
+  font-size: 3rem;
+}
+.main-section .cta-button {
+  padding: 10px;
+  margin: 0;
+  text-decoration: none;
+  color: black;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 500;
+  font-size: 1.25em;
+  background-color: #ffc11c;
+  border-radius: 20px;
 }/*# sourceMappingURL=style.css.map */
