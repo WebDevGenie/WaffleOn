@@ -82,6 +82,11 @@ header .navbar {
   font-size: 1.25em;
   background-color: #ffc11c;
   border-radius: 20px;
+  transition: 0.4s;
+}
+#main-section .cta-button:hover {
+  transform: translateY(-5px);
+  color: #a52a2a;
 }
 #main-section .wave {
   position: absolute;

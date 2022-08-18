@@ -95,6 +95,12 @@ header {
     font-size: 1.25em;
     background-color: $primary-btn;
     border-radius: 20px;
+
+    transition: 0.4s;
+    &:hover {
+      transform: translateY(-5px);
+      color: #a52a2a;
+    }
   }
 
   .wave {
