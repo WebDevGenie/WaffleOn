@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Allura&display=swap");
 
 $primary-btn: #ffc11c;
+$primary-font: "Allura", cursive;
 
 * {
   scroll-behavior: smooth;
@@ -11,7 +12,7 @@ $primary-btn: #ffc11c;
 body {
   background-color: #201d1f;
   color: #ffffff;
-  font-family: sans-serif;
+  height: 100%;
 }
 
 header {
@@ -25,14 +26,23 @@ header {
   a {
     text-decoration: none;
     color: #ffffff;
-    font-family: "Times New Roman", Times, serif;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    font-weight: 400;
+    padding: 10px;
+    transition: 0.4s;
+    border-radius: 20px;
+    &:hover {
+      background-color: #ffc11c;
+      color: #201d1f;
+    }
   }
 
   .logo {
     position: absolute;
     top: 0;
     left: 0;
-    margin-left: 1.5rem;
+    margin-left: 2rem;
   }
 
   .navbar {
@@ -48,7 +58,7 @@ header {
 
 .nav-list {
   display: inline-flex;
-  gap: 5vw;
+  gap: 2vw;
 }
 
 .nav-items {
@@ -56,7 +66,7 @@ header {
   list-style-type: none;
 }
 
-.main-section {
+#main-section {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -70,7 +80,7 @@ header {
   background-size: cover;
 
   .main-title {
-    font-family: "Allura", cursive;
+    font-family: $primary-font;
     font-size: 3rem;
   }
 
@@ -79,10 +89,59 @@ header {
     margin: 0;
     text-decoration: none;
     color: black;
-    font-family: "Courier New", Courier, monospace;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
     font-weight: 500;
     font-size: 1.25em;
     background-color: $primary-btn;
     border-radius: 20px;
+  }
+
+  .wave {
+    position: absolute;
+    bottom: 0;
+  }
+}
+
+.round-images {
+  border-radius: 100%;
+}
+
+#info-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // height: 500px;
+  height: 30rem;
+  text-align: center;
+  gap: 10vw;
+  flex-wrap: wrap;
+}
+
+#fresh-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // height: 500px;
+  height: 30rem;
+  text-align: center;
+  gap: 10vw;
+  flex-wrap: wrap-reverse;
+}
+
+.section-text {
+  display: block;
+  width: min-content;
+  text-align: center;
+  .section-title {
+    width: max-content;
+    font-family: $primary-font;
+    font-size: 3rem;
+    line-height: 5rem;
+  }
+
+  .section-paragraph {
+    max-width: 300px;
+    margin-inline: auto;
   }
 }

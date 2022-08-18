@@ -8,7 +8,7 @@
 body {
   background-color: #201d1f;
   color: #ffffff;
-  font-family: sans-serif;
+  height: 100%;
 }
 
 header {
@@ -22,13 +22,21 @@ header {
 header a {
   text-decoration: none;
   color: #ffffff;
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 400;
+  padding: 10px;
+  transition: 0.4s;
+  border-radius: 20px;
+}
+header a:hover {
+  background-color: #ffc11c;
+  color: #201d1f;
 }
 header .logo {
   position: absolute;
   top: 0;
   left: 0;
-  margin-left: 1.5rem;
+  margin-left: 2rem;
 }
 header .navbar {
   justify-self: center;
@@ -40,7 +48,7 @@ header .navbar {
 
 .nav-list {
   display: inline-flex;
-  gap: 5vw;
+  gap: 2vw;
 }
 
 .nav-items {
@@ -48,7 +56,7 @@ header .navbar {
   list-style-type: none;
 }
 
-.main-section {
+#main-section {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -60,18 +68,66 @@ header .navbar {
   background-repeat: no-repeat;
   background-size: cover;
 }
-.main-section .main-title {
+#main-section .main-title {
   font-family: "Allura", cursive;
   font-size: 3rem;
 }
-.main-section .cta-button {
+#main-section .cta-button {
   padding: 10px;
   margin: 0;
   text-decoration: none;
   color: black;
-  font-family: "Courier New", Courier, monospace;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-weight: 500;
   font-size: 1.25em;
   background-color: #ffc11c;
   border-radius: 20px;
+}
+#main-section .wave {
+  position: absolute;
+  bottom: 0;
+}
+
+.round-images {
+  border-radius: 100%;
+}
+
+#info-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30rem;
+  text-align: center;
+  gap: 10vw;
+  flex-wrap: wrap;
+}
+
+#fresh-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30rem;
+  text-align: center;
+  gap: 10vw;
+  flex-wrap: wrap-reverse;
+}
+
+.section-text {
+  display: block;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  text-align: center;
+}
+.section-text .section-title {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  font-family: "Allura", cursive;
+  font-size: 3rem;
+  line-height: 5rem;
+}
+.section-text .section-paragraph {
+  max-width: 300px;
+  margin-inline: auto;
 }/*# sourceMappingURL=style.css.map */
