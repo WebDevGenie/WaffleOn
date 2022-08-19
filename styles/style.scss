@@ -32,6 +32,7 @@ header {
     padding: 10px;
     transition: 0.4s;
     border-radius: 20px;
+    box-shadow: 5px 5px 5px #000000;
     &:hover {
       background-color: #ffc11c;
       color: #201d1f;
@@ -82,6 +83,7 @@ header {
   .main-title {
     font-family: $primary-font;
     font-size: 3rem;
+    text-shadow: 5px 5px #000000;
   }
 
   .cta-button {
@@ -102,14 +104,14 @@ header {
       color: #a52a2a;
     }
   }
+}
 
-  .wave {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: auto;
-    max-height: 200px;
-  }
+.wave {
+  position: absolute;
+  bottom: -10px;
+  width: 100%;
+  height: auto;
+  max-height: 200px;
 }
 
 .round-images {
@@ -120,30 +122,59 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  // height: 500px;
-  height: 30rem;
+  height: fit-content;
   text-align: center;
   gap: 10vw;
   flex-wrap: wrap;
+
+  margin-bottom: 5rem;
+
+  position: relative;
 }
 
 #fresh-section {
   display: flex;
   justify-content: center;
   align-items: center;
-  // height: 500px;
-  height: 30rem;
+  height: max-content;
   text-align: center;
   gap: 10vw;
   flex-wrap: wrap-reverse;
+  background-color: #a52a2a;
+
+  padding-top: 10rem;
+
+  position: relative;
+
+  .wave2 {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+  }
+}
+
+#drink-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
+  text-align: center;
+  gap: 10vw;
+  flex-wrap: wrap;
+
+  margin-bottom: 5rem;
+
+  position: relative;
 }
 
 .section-text {
   display: block;
-  width: min-content;
+  width: 300px;
   text-align: center;
   .section-title {
-    width: max-content;
+    width: fit-content;
     font-family: $primary-font;
     font-size: 3rem;
     line-height: 5rem;
@@ -152,5 +183,20 @@ header {
   .section-paragraph {
     max-width: 300px;
     margin-inline: auto;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #info-section,
+  #fresh-section {
+    gap: 10px;
+  }
+
+  header {
+    display: block;
+    text-align: center;
+    .logo {
+      position: relative;
+    }
   }
 }
